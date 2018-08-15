@@ -1,0 +1,38 @@
+<div class="form-group">
+  <input type="text" class="form-control" placeholder="Search By Name" [(ngModel)]="searchTerm" />
+</div>
+<div *ngFor="let employee of filteredEmployees">
+  <!-- <div (click)="onClick(employee.id)" class="pointerCursor"> -->
+  <app-display-employee [employee]="employee" [searchTerm]="searchTerm" 
+  (notifyDelete)="onDeleteNotification($event)" >
+  </app-display-employee>
+<!-- </div> -->
+</div>
+<div *ngIf="error">
+  {{error}}
+</div>
+
+<!-- using template variable reference approach to bind data from child to parent component-->
+<!-- <h1 #h1Variable>
+</h1>
+  <div *ngFor="let employee of employees">
+      <div (click)="h1Variable.innerHTML = childComponent.getEmployeeNameAndGender()">
+    <app-display-employee [employee]="employee" #childComponent>
+    </app-display-employee>
+  </div> 
+</div> -->
+
+<!-- using output properties approach to bind data from child to parent component -->
+<!-- <h1 *ngIf="dataFromChild">
+  {{dataFromChild?.name + ' ' + dataFromChild?.gender}}
+</h1> -->
+<!-- <div *ngFor="let employee of employees">
+  <app-display-employee [employee]="employee" #childComponent (notify)="handleNotify($event)"></app-display-employee>
+</div> -->
+<!-- <button (click)="nextEmployee()" class="btn btn-primary">
+  View Nxt Employee
+</button>
+<br/>
+<br/>
+<app-display-employee [employee]="employeeToDisplay" [employeeId]="employeeToDisplay.id">
+</app-display-employee> -->

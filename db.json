@@ -1,0 +1,62 @@
+{
+  "employees": [
+    {
+      "id": 2,
+      "name": "Mary",
+      "gender": "female",
+      "contactPreference": "phone",
+      "phoneNumber": "9876543210",
+      "dateOfBirth": "12/25/1979",
+      "department": "2",
+      "isActive": true,
+      "photoPath": "assets/images/mary.jpg"
+    },
+    {
+      "id": 3,
+      "name": "John",
+      "gender": "male",
+      "contactPreference": "phone",
+      "phoneNumber": "1234567890",
+      "dateOfBirth": "3/25/1976",
+      "department": "3",
+      "isActive": false,
+      "photoPath": "assets/images/john.png"
+    },
+    {
+      "id": 4,
+      "name": "Shaaf",
+      "gender": "male",
+      "contactPreference": "email",
+      "phoneNumber": null,
+      "email": "shaaf.saad@gmail.com",
+      "dateOfBirth": "1908-12-30T18:30:00.000Z",
+      "department": "3",
+      "isActive": true,
+      "photoPath": "assets/images/mark.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Shaaf",
+      "gender": "male",
+      "contactPreference": "email",
+      "phoneNumber": "1",
+      "email": "shaaf@gmail.com",
+      "dateOfBirth": "2018-08-31T03:27:31.000Z",
+      "department": "3",
+      "isActive": true,
+      "photoPath": "assets/images/mark.jpg"
+    },
+    {
+      "id": 1,
+      "name": "Mark",
+      "gender": "male",
+      "contactPreference": "phone",
+      "phoneNumber": "123456789",
+      "email": null,
+      "dateOfBirth": "1988-11-26T18:30:00.000Z",
+      "department": "2",
+      "isActive": true,
+      "photoPath": "assets/images/mark.jpg"
+    }
+  ]
+}
